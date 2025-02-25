@@ -1,0 +1,541 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  transition: 0.1s;
+}
+
+body {
+  background: white;
+}
+
+.dark-mode,
+.dark {
+  background-color: rgb(19, 25, 33);
+  color: white;
+  transition: 0.1s;
+}
+.dark {
+  cursor: pointer;
+}
+
+.one .head .material-symbols-outlined {
+  /* width: 20px;
+  height: 20px; */
+  /* border: 1px solid orange; */
+  border-radius: 15px;
+  /* outline: none;
+  background: orange; */
+  /* color: orange; */
+  cursor: pointer;
+  transition: 0.3s;
+}
+.one .head .material-symbols-outlined:hover {
+  /* border: none;
+  background: orange; */
+  transition: 0.3s;
+  transform: scale(1.1);
+  box-shadow: 1px 1px 5px grey;
+}
+
+.one {
+  width: 100%;
+  position: fixed;
+}
+
+.one .head {
+  display: flex;
+  background: rgb(19, 25, 33);
+  color: white;
+  align-items: center;
+  padding: 3px;
+}
+
+.one .head img.amazonlogo {
+  width: 90px;
+  padding: 5px;
+  height: 30px;
+  /* background: red; */
+  margin-left: 10px;
+  margin-right: 30px;
+  margin-top: 10px;
+}
+
+.one .head .amazonlogo:hover {
+  /* border: 1px solid white; */
+  transition: 0.3s ease-in;
+  border-radius: 3px;
+  /* box-shadow: 1px 1px 5px grey; */
+  transform: scale(1.1);
+}
+.amazonlogo-mobile{
+  display: none;
+}
+.menu-icon, .expand {
+  display: none;
+}
+.head .search-icon {
+  width: 50%;
+  height: 41px;
+  border-radius: 5px 0px 0px 5px;
+  margin-left: 300px;
+  border: none;
+  padding-left: 15px;
+  font-size: 15px;
+  transition: 0.3s;
+}
+.head .search-icon:focus {
+  border: 2px solid orange;
+  background: transparent;
+  outline: none;
+  /* border-radius: 3px; */
+  height: 37px;
+  color: whitesmoke;
+  transition: 0.5s;
+}
+.head .search-icon:hover {
+  /* border: 2px solid orange; */
+  background: transparent;
+  outline: none;
+  height: 37px;
+  color: whitesmoke;
+  transition: 0.5s;
+  box-shadow: 1px 1px 5px grey;
+}
+
+.head .search-icon:active {
+  border: none;
+}
+
+.head .seacrh {
+  height: 23px;
+  border: none;
+  background: rgb(245, 173, 40);
+  width: 24px;
+  border-radius: 0px 5px 5px 0px;
+  padding: 9px;
+  margin-right: 350px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.head .seacrh:hover {
+  background: rgb(187, 187, 187);
+  transition: 0.3s;
+}
+
+.head .seacrh:active {
+  background: rgb(88, 88, 88);
+  transition: 0.1s;
+  color: whitesmoke;
+}
+
+.one .order {
+  width: 70px;
+}
+
+.one a.order {
+  color: white;
+  text-decoration: none;
+  font-size: 13px;
+  margin-right: 4px;
+  padding-top: 5px;
+  /* background: red; */
+  line-height: 18px;
+}
+
+.one a.order:hover {
+  border: 1px solid white;
+  transition: 0.2s;
+  border-radius: 2px;
+}
+.one .return-menu-div{
+  display: none;
+}
+
+.one .cart {
+  display: flex;
+  padding: 5px;
+}
+
+.one .cart:hover {
+  border: 1px solid white;
+  transition: 0.2s;
+  border-radius: 2px;
+}
+
+.one .cart p {
+  position: relative;
+  right: -32px;
+  top: 2px;
+  font-size: 13px;
+  color: rgb(245, 173, 40);
+}
+
+.one .cart img {
+  width: 50px;
+}
+
+.one .cart h3 {
+  font-size: 15px;
+  position: relative;
+  top: 13px;
+  /* margin-right: 10px; */
+}
+
+.orderY {
+  /* background: red; */
+  height: 500px;
+  width: 50%;
+  /* padding: 20px; */
+  /* border: 3px solid yellow; */
+  margin-left: 25%;
+  padding-top: 100px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.orderY .ordPla {
+  border: 1px solid rgb(210, 210, 210);
+  width: 90%;
+  padding: 0;
+  border-radius: 5px;
+  padding-bottom: 30px;
+}
+
+.orderY .ordPla .pla {
+  display: flex;
+  /* justify-content: space-between; */
+  background: whitesmoke;
+  gap: 20px;
+  font-size: 15px;
+  padding: 20px;
+  width: 95%;
+  margin: auto;
+  margin-bottom: 25px;
+  border-bottom: 1px solid rgb(217, 217, 217);
+}
+.orderY .pla .ordid {
+  margin-left: 300px;
+}
+
+.orderY .proGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* background: gray; */
+  width: 97%;
+  margin: auto;
+  padding: 10px;
+  row-gap: 45px;
+}
+
+.orderY .prodd {
+  /* background: blue; */
+  width: 30%;
+}
+
+.orderY .proGrid img {
+  width: 100%;
+}
+
+.orderY .listt {
+  margin-left: -160px;
+  width: 90%;
+  /* background: green; */
+}
+
+.orderY .track {
+  width: 100%;
+  /* background: yellow; */
+  margin-left: -110px;
+}
+
+.orderY .track button {
+  width: 230px;
+  margin-left: 130px;
+  margin-top: 20px;
+  height: 35px;
+  border: rgba(128, 128, 128, 0.408);
+  box-shadow: 1px 1px 3px rgba(130, 130, 130, 0.534);
+  background: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.orderY .track button:hover {
+  box-shadow: inset 1px 1px 6px rgba(128, 128, 128, 0.161);
+  transition: 0.3s;
+}
+
+.orderY .track button:active {
+  background: rgba(128, 128, 128, 0.161);
+  transition: 0.3s;
+}
+
+.orderY .listt button {
+  width: 150px;
+  height: 35px;
+  border: none;
+  background: rgb(255, 200, 99);
+  border-radius: 5px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.orderY .listt button:hover {
+  box-shadow: inset 5px 5px 10px rgb(255, 174, 0);
+  transition: 0.3s;
+}
+
+.orderY .listt button:active {
+  background: white;
+  color: orange;
+  transition: 0.3s;
+  box-shadow: none;
+}
+.one .head .menu-icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+.one .head .expand {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.one .head .return-menu-div {
+  background: rgb(19, 25, 33);
+  position: absolute;
+  padding-top: 20px;
+  top: 50px;
+  left: 0;
+  justify-items: center;
+  transition: 0.7s;
+}
+.one .head .return-menu-div .order {
+  text-decoration: none;
+  font-size: 18px;
+}
+
+@media(max-width: 768px) {
+  .amazonlogo-mobile {
+    display: none;
+  }
+  .amazonlogo{
+    margin-right: 0;
+  }
+   /* RETURNS CSS*/
+  .orderY {
+    width: 100%;
+    margin: auto;
+  }
+  .orderY .ordPla {
+    width: 100%;
+  }
+  .one {
+    width: 100%;
+  }
+  .one .head .search-icon{
+    width: 300px;
+    margin-left: 0px;
+    margin-right: 0;
+  }
+  .one .head .order{
+    margin-left: -250px;
+  }
+  .one .head .menu-icon, .expand{
+    margin-left: -150px;
+    display: none;
+  }
+
+
+  /* CHECKOUT CSS */
+  header {
+    width: 100%;
+  }
+  header .head {
+    width: 70%;
+    margin: auto;
+  }
+  main {
+    width: 100%;
+  }
+  main .checkout {
+    width: 100%;
+    display: block;
+  }
+  main .product-grid {
+    width: 50%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  main .product-grid img {
+    margin-right: 0;
+  }
+  main .product-info {
+    margin-left: -200px;
+  }
+  main .summary {
+    width: 60%;
+    margin: auto;
+  }
+  main .summary hr.right {
+    margin-left: 380px;
+  }
+}
+
+@media (max-width: 425px) {
+  /* RETURNS CSS*/
+
+  .amazonlogo{
+    display: none;
+  }
+  .amazonlogo-mobile{
+    display: block;
+    width: 30px;
+    margin-right: 50px;
+  }
+  .orderY {
+    width: 100%;
+    margin: auto;
+  }
+  .orderY .ordPla .pla {
+    width: 90%;
+    margin: auto;
+    /* background: green; */
+  }
+  .orderY .ordPla .pla .ordid {
+    margin-left: 0px;
+  }
+  .orderY .ordPla {
+    width: 100%;
+    margin: auto;
+    /* display: block; */
+    /* background: red; */
+  }
+  .orderY .proGrid {
+    display: block;
+    width: 100%;
+    margin: auto;
+    /* background: blue; */
+  }
+  .orderY .listt {
+    width: 100%;
+    margin: auto;
+    /* background: yellow; */
+  }
+
+  .orderY .track {
+    width: 80%;
+    margin: auto;
+    /* background: yellow; */
+  }
+  .orderY .track button {
+    width: 100%;
+    margin-left: -10px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    height: 35px;
+    border: rgba(128, 128, 128, 0.408);
+    box-shadow: 1px 1px 3px rgba(130, 130, 130, 0.534);
+    background: white;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .one .head {
+    width: 100%;
+    margin: auto;
+  }
+  .one .head .search-icon {
+    width: 150px;
+    /* margin-left: 50px; */
+    
+  }
+  .one .head .seacrh {
+    /* margin-right: 50px; */
+
+  }
+  .one .head .cart {
+    display: none;
+  }
+  .one .head .return-menu-div {
+    display: none;
+    width: 100%;
+    height: 100px;
+  }
+
+
+  .one .head img.menu-icon {
+    display: block;
+    margin-left: -250px;
+    /* width: 40px;
+    height: 40px;
+    border-radius: 50%; */
+  }
+  /* .one .head .expand { */
+    /* display: inline;
+    margin-left: -300px; */
+    /* width: 40px;
+    height: 40px;
+    border-radius: 50%; */
+  }
+
+  .one .head .return-menu-div {
+    background: rgb(19, 25, 33);
+    position: absolute;
+    padding-top: 20px;
+    top: 50px;
+    left: 0;
+    justify-items: center;
+    transition: 0.7s;
+  }
+  .one .head .return-menu-div .order {
+    text-decoration: none;
+    font-size: 18px;
+  }
+  .ordPla .proGrid .listt button{
+    width: 80%;
+    margin: auto;
+    margin-left: 35px;
+    margin-top: 30px;
+  }
+  .ordpla .proGrid .prodd img{
+    width: 50%;
+    margin: auto;
+  }
+  
+}
+  /* CHECKOUT CSS */
+  /* header {
+    width: 100%;
+  }
+  header .head {
+    width: 70%;
+    margin: auto;
+  }
+  main {
+    width: 100%;
+  }
+  main .checkout {
+    width: 100%;
+    display: block;
+  }
+  main .product-grid {
+    width: 50%;
+   display: block;
+  }
+  main .product-grid img {
+    margin-right: 0;
+  }
+  main .product-info {
+    margin-left: -200px;
+  }
+  main .summary {
+    width: 60%;
+    margin: auto;
+  }
+  main .summary hr.right {
+    margin-left: 380px;
+  } */
+}

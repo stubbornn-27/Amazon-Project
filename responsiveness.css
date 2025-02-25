@@ -1,0 +1,235 @@
+@media (max-width: 768px) {
+  .one .head {
+    width: 100%;
+    /* border: 1px slid red; */
+  }
+  .one .head img.amazonlogo {
+    width: 90px;
+    padding: 5px;
+    height: 30px;
+    margin-right: 170px;
+  }
+  .one input.search-icon {
+    margin-left: -90px;
+    width: 300px;
+    background: rgba(255, 0, 0, 0.178);
+  }
+  .one .head .seacrh {
+    margin-right: 30px;
+  }
+  .one .head .menu-icon,
+  .expand {
+    display: none;
+  }
+  .one .head .return-menu-div {
+    display: none;
+  }
+  .return-cart-div {
+    display: flex;
+  }
+  main {
+    width: 100%;
+  }
+  main .prods {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+  }
+  /* main .prod {
+    width: 110px;
+  } */
+  main .prod h4 {
+    font-size: 0.7rem;
+    width: 100%;
+    height: 40px;
+  }
+  main .prod .rate {
+    width: 50px;
+  }
+  main .prod span.rating {
+    font-size: 0.7rem;
+  }
+  main .prod h2 {
+    font-size: 0.9rem;
+  }
+  main .prod .ops {
+    width: 40px;
+    height: 20px;
+  }
+  main .prod .add button {
+    white-space: nowrap;
+    border-radius: 7px;
+    font-size: 0.7rem;
+  }
+  main .prods {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+@media (max-width: 425px) {
+  .one .head .menu-icon,
+  .expand {
+    display: inline;
+  }
+
+  .one .head {
+    width: 100%;
+  }
+  .one input.search-icon {
+    width: 100px;
+    margin-left: px;
+  }
+  .one .head .seacrh {
+    margin-right: 50px;
+  }
+  .one .head .expand {
+    /* display: none; */
+  }
+  .one .head .amazonlogo {
+    display: none;
+  }
+  .one .head .amazonlogo-mobile {
+    display: block;
+    margin-right: 120px;
+  }
+  .one .head img.amazonlogo-mobile {
+    width: 30px;
+    padding: 10px;
+  }
+  .one .cart {
+    height: 40px;
+    width: 100%;
+    justify-content: center;
+  }
+  .one .cart:hover {
+    border: none;
+    background: rgba(0, 0, 0, 0.339);
+  }
+  .one .cart h3 {
+    font-size: 20px;
+    cursor: pointer;
+    border: none;
+  }
+
+  main {
+    width: 100%;
+  }
+  main .prod {
+    width: 100px;
+  }
+  main .prod .ops {
+    width: 50px;
+    height: 30px;
+  }
+  main .prod .add button {
+    white-space: nowrap;
+    border-radius: 7px;
+    font-size: 0.7rem;
+  }
+  main .prods {
+    display: block;
+  }
+  main .prods .prod {
+    width: 100%;
+  }
+  main .prod h4 {
+    font-size: 1rem;
+    width: 100%;
+    height: 40px;
+  }
+  main .prod .rate {
+    width: 150px;
+  }
+  main .prod span.rating {
+    font-size: 0.9rem;
+  }
+  main .prod h2 {
+    font-size: 1rem;
+  }
+  main .prod .add button {
+    white-space: nowrap;
+    border-radius: 7px;
+    font-size: 1rem;
+  }
+
+  .one .head .return-cart-div {
+    display: none;
+  }
+  /* .one .head .cart {
+    display: none;
+  } */
+  .menu-icon {
+    display: inline;
+  }
+  .return-menu-div {
+    display: none;
+    width: 100%;
+    height: 100px;
+  }
+
+  /* CHECKOT CSS */
+
+  /* main {
+    width: 100%;
+  }
+  main .prods {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+  } */
+  /* main .prod {
+    width: 110px;
+  } */
+  /* main .prod h4 {
+    font-size: 0.7rem;
+    width: 100%;
+    height: 40px;
+  }
+  main .prod .rate {
+    width: 50px;
+  }
+  main .prod span.rating {
+    font-size: 0.7rem;
+  }
+  main .prod h2 {
+    font-size: 0.9rem;
+  }
+  main .prod .ops {
+    width: 40px;
+    height: 20px;
+  }
+  main .prod .add button {
+    white-space: nowrap;
+    border-radius: 7px;
+    font-size: 0.7rem;
+  }
+  main .prods {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+  } */
+}
+
+/*MENU ICON*/
+.one .head .menu-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.one .head .expand {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.one .head .return-menu-div {
+  background: rgb(19, 25, 33);
+  position: absolute;
+  padding-top: 20px;
+  top: 50px;
+  left: 0;
+  justify-items: center;
+  transition: 0.7s;
+}
+.one .head .return-menu-div .order {
+  text-decoration: none;
+  font-size: 18px;
+}

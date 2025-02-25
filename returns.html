@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Returns & Order</title>
+  <link rel="stylesheet" href="returns.css">
+  <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=dark_mode" /> -->
+   <!-- <link rel="stylesheet" href="responsiveness.css"> -->
+</head>
+<body>
+  <section class="one">
+    <div class="head">
+      <a href="index.html"><img src="icons/amazon-logo-white.png" alt="Amazon Logo" class="amazonlogo"></a>
+
+      <a href="index.html"><img src="icons/amazon-mobile-logo-white.png" alt="Amazon Logo" class="amazonlogo-mobile"></a>
+      <!-- <span class="material-symbols-outlined" class="dark" onclick="myFunction()">
+        dark_mode
+        </span> -->
+        <!-- <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+          <path fill-rule="evenodd" d="M11.675 2.015a.998.998 0 0 0-.403.011C6.09 2.4 2 6.722 2 12c0 5.523 4.477 10 10 10 4.356 0 8.058-2.784 9.43-6.667a1 1 0 0 0-1.02-1.33c-.08.006-.105.005-.127.005h-.001l-.028-.002A5.227 5.227 0 0 0 20 14a8 8 0 0 1-8-8c0-.952.121-1.752.404-2.558a.996.996 0 0 0 .096-.428V3a1 1 0 0 0-.825-.985Z" clip-rule="evenodd"/>
+        </svg> -->
+        
+     <input type="text" name="" id="" placeholder="Search" class="search-icon">
+     <img src="icons/search-icon.png" alt="" class="seacrh">
+
+     <img src="icons/menu_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png" alt="" class="menu-icon" id="opn" onclick="expand()">
+     <img src="icons/expand_circle_up_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png" alt="" class= "expand" id="collapse" onclick="collapse()">
+     
+
+     <div class="return-menu-div" id="ret">
+      <a href="returns.html" class="order">Returns <span style="font-weight: 700;">& Orders</span></a>
+
+    <div class="cart">
+      <p id="cartty"></p>
+      <h3>CART</h3>
+    </div>
+   </div>
+    </div>
+  </section>
+
+  <section class="orderY">
+    <div>
+      <h2>Your Orders</h2>
+    </div>
+
+    <div class="ordPla">
+      <div class="pla">
+        <p><span></spa>Order Placed:</span><br>February 6</p>
+        <p ><span>Total:</span><br>$35.06</p><br>
+        <p class="ordid"><span>Order ID:</span><br>27cba69d-4c3d-4098-b42d-ac7fa62b7664</p><br>
+      </div>
+
+      <div class="proGrid">
+        <div class="prodd">
+          <img src="products/athletic-cotton-socks-6-pairs.jpg" alt="">
+        </div>
+        <div class="listt">
+          <p>Black and Gray Athletic Cotton Socks - 6 Pairs</p>
+          <p>Arriving on: February 11</p>
+          <p>Quantity: 1</p>
+           <button onclick="buyAgain()" id="buyAg">Buy it again</button>
+        </div>
+        <div class="track">
+          <button>Track Package</button>
+        </div>
+
+        <div class="prodd">
+          <img src="products//adults-plain-cotton-tshirt-2-pack-teal.jpg" alt="">
+        </div>
+        <div class="listt">
+          <p>Black and Gray Athletic Cotton Socks - 6 Pairs</p>
+          <p>Arriving on: February 11</p>
+          <p>Quantity: 1</p>
+           <button onclick="buyAgainn()" id="buyAg">Buy it again</button>
+        </div>
+        <div class="track">
+          <button>Track Package</button>
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+
+ 
+  
+</body>
+<!-- <SCript src="return.js"></SCript> -->
+<script src="app.js"></script>
+
+</html>

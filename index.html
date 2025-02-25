@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amazon Projects</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=dark_mode" />
+  <link rel="stylesheet" href="responsiveness.css">
+</head>
+<body>
+  <section class="one">
+    <div class="head">
+     <a href="index.html"><img src="icons/amazon-logo-white.png" alt="Amazon Logo" class="amazonlogo"></a>
+
+     <a href="index.html"><img src="icons/amazon-mobile-logo-white.png" alt="Amazon Logo" class="amazonlogo-mobile"></a>
+
+      <!-- <span class="material-symbols-outlined" class="dark" onclick="myFunction()">
+        
+        <svg  aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+          <path fill-rule="evenodd" d="M11.675 2.015a.998.998 0 0 0-.403.011C6.09 2.4 2 6.722 2 12c0 5.523 4.477 10 10 10 4.356 0 8.058-2.784 9.43-6.667a1 1 0 0 0-1.02-1.33c-.08.006-.105.005-.127.005h-.001l-.028-.002A5.227 5.227 0 0 0 20 14a8 8 0 0 1-8-8c0-.952.121-1.752.404-2.558a.996.996 0 0 0 .096-.428V3a1 1 0 0 0-.825-.985Z" clip-rule="evenodd"/>
+        </svg>
+        </span> -->
+        
+        
+        <input type="text" name="" id="" placeholder="Search" class="search-icon">
+        <img src="icons/search-icon.png" alt="" class="seacrh">
+        
+        <div class="return-cart-div">
+          <a href="returns.html" class="order">Returns<br><span style="font-weight: 700;">& Orders</span></a>
+
+          <div class="cart">
+             <p id="cartty"></p>
+             <a href="cart.html"><img src="icons/cart-icon.png" alt=""></a>
+             <h3>Cart</h3>
+          </div>
+        </div>
+
+      
+        <img src="icons/menu_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png" alt="" class="menu-icon" id="opn" onclick="expand()">
+        <img src="icons/expand_circle_up_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png" alt="" class= "expand" id="collapse" onclick="collapse()">
+
+      <div class="return-menu-div" id="ret">
+        <a href="returns.html" class="order">Returns <span style="font-weight: 700;">& Orders</span></a>
+
+      <div class="cart">
+        <p id="cartty"></p>
+        <a href="cart.html"><h3>CART</h3></a>
+      </div>
+     </div>
+    </div>
+
+  </section>
+
+  <main>
+    <div class="prods">
+      <div class="prod">
+        <img src="products/athletic-cotton-socks-6-pairs.jpg" alt="" class="socks">
+        <h4>Black and Gray Athletic Cotton Socks - 6 Pairs</h4>
+        <img src="images/rating-45.png" alt="" class="rate"><span class="rating">741</span>
+        <h2>$10.90</h2>
+        <select name="" id="quantity" class="ops">
+          <option id="opsClick" value="1">1</option>
+          <option id="opsClick" value="2">2</option>
+          <option id="opsClick" value="3">3</option>
+          <option id="opsClick" value="4">4</option>
+          <option id="opsClick" value="5">5</option>
+          <option id="opsClick" value="6">6</option>
+          <option id="opsClick" value="7">7</option>
+          <option id="opsClick" value="8">8</option>
+          <option id="opsClick" value="9">9</option>
+          <option id="opsClick" value="10">10</option>
+        </select>
+        <p class="added" id="added"></p>
+  
+        <div class="add">
+          <button onclick="addCart('one')" id="adCart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="prod">
+        <img src="products/intermediate-composite-basketball.jpg" alt="" class="socks">
+       
+        <h4>Intermediate Size Basketball</h4>
+        <img src="images/rating-4.png" alt="" class="rate"><span class="rating">143</span>
+        <h2>$20.95</h2>
+        <select name="" id="quantity" class="ops">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+        </select>
+        <p class="added" id="added"></p>
+        <div class="add">
+          <button onclick="addCart('two')" id="adCart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="prod">
+        <img src="products/adults-plain-cotton-tshirt-2-pack-teal.jpg" alt="" class="socks">
+        <h4>Adults Plain Cotton T-Shirt - 2 Pack</h4>
+        <img src="images/rating-45.png" alt="" class="rate"> <span class="rating">3143</span>
+        <h2>$7.99</h2>
+        <select name="" id="quantity" class="ops">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+        </select>
+        <p class="added" id="added"></p>
+        <div class="add">
+          <button onclick="addCart('three')" id="adCart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="prod">
+        <img src="products/black-2-slot-toaster.jpg" alt="" class="socks">
+        <h4>2 Slot Toaster - Black</h4>
+        <img src="images/rating-5.png" alt="" class="rate"><span class="rating">5631</span>
+        <h2>$18.99</h2>
+        
+  
+        <select name="" id="quantity" class="ops">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+        </select>
+        <p class="added" id="added"></p>
+        <div class="add">
+          <button onclick="addCart('four')" id="adCart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="prod">
+        <img src="products/6-piece-white-dinner-plate-set.jpg" alt="" class="socks">
+        <h4>6 Piece White Dinner Plate Set</h4>
+        <img src="images/rating-4.png" alt="" class="rate"><span class="rating">5511</span>
+        <h2>$20.67</h2>
+        <select name="" id="quantity" class="ops">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+        </select>
+        <p class="added" id="added"></p>
+        <div class="add">
+          <button onclick="addCart('five')" id="adCart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="prod">
+        <img src="products/6-piece-non-stick-baking-set.webp" alt="" class="socks">
+        <h4>6-Piece Nonstick, Carbon Steel Oven Bakeware Baking Set</h4>
+        <img src="images/rating-45.png" alt="" class="rate"><span class="rating">9870</span>
+        <h2>$34.99</h2>
+        <select name="" id="quantity" class="ops">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+        </select>
+        <p class="added" id="added"></p>
+        <div class="add">
+          <button onclick="addCart('six')" id="adCart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="prod">
+        <img src="products/plain-hooded-fleece-sweatshirt-yellow.jpg" alt="" class="socks">
+        <h4>Plain Hooded Fleece Sweatshirt</h4>
+        <img src="images/rating-45.png" alt="" class="rate"><span class="rating">3605</span>
+        <h2>$24.00</h2>
+        <select name="" id="quantity" class="ops">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+        </select>
+        <p class="added" id="added"></p>
+        <div class="add">
+        <button onclick="addCart('seven')" id="adCart">Add to Cart</button>
+      </div>
+      </div>
+
+<!-- THIS IS THE SECOND LINE -->
+
+      <div class="prod">
+        <img src="products/luxury-tower-set-6-piece.jpg" alt="" class="socks">
+        <h4>Black and Gray Athletic Cotton Socks - 6 Pairs</h4>
+        <img src="images/rating-45.png" alt="" class="rate"><span class="rating">8500</span>
+        <h2>$10.90</h2>
+        <select name="" id="quantity" class="ops">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+        </select>
+        <p class="added" id="added"></p>
+  
+        <div class="add">
+          <button onclick="addCart('eight')" id="adCart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="prod">
+        <img src="products/liquid-laundry-detergent-plain.jpg" alt="" class="socks">
+        <h4>Intermediate Size Basketball</h4>
+        <img src="images/rating-4.png" alt="" class="rate"><span class="rating">964</span>
+        <h2>$20.95</h2>
+        <select name="" id="quantity"class="ops">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+        </select>
+        <p class="added" id="added"></p>
+        <div class="add">
+          <button onclick="addCart('nine')" id="adCart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="prod">
+        <img src="products/knit-athletic-sneakers-gray.jpg" alt="" class="socks">
+        <h4>Adults Plain Cotton T-Shirt - 2 Pack</h4>
+        <img src="images/rating-45.png" alt="" class="rate"><span class="rating">3356</span>
+        <h2>$7.99</h2>
+        <select name="" id="quantity" class="ops">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+        </select>
+        <p class="added" id="added"></p>
+        <div class="add">
+          <button onclick="addCart('ten')" id="adCart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="prod">
+        <img src="products/women-chiffon-beachwear-coverup-black.jpg" alt="" class="socks">
+        <h4>2 Slot Toaster - Black</h4>
+        <img src="images/rating-5.png" alt="" class="rate"><span class="rating">9861</span>
+        <h2>$18.99</h2>
+        
+  
+        <select name="" id="quantity" class="ops">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+        </select>
+        <p class="added" id="added"></p>
+        <div class="add">
+          <button onclick="addCart('eleven')" id="adCart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="prod">
+        <img src="products/round-sunglasses-black.jpg" alt="" class="socks">
+        <h4>6 Piece White Dinner Plate Set</h4>
+        <img src="images/rating-4.png" alt="" class="rate"><span class="rating">6504</span>
+        <h2>$20.67</h2>
+        <select name="" id="" class="ops">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+        </select>
+        <p class="added" id="added"></p>
+        <div class="add">
+          <button onclick="addCart('twelve')" id="adCart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="prod">
+        <img src="products/women-beach-sandals.jpg" alt="" class="socks">
+        <h4>6-Piece Nonstick, Carbon Steel Oven Bakeware Baking Set</h4>
+        <img src="images/rating-45.png" alt="" class="rate"><span class="rating">77741</span>
+        <h2>$34.99</h2>
+        <select name="" id="" class="ops">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+        </select>
+        <p class="added" id="added"></p>
+        <div class="add">
+          <button onclick="addCart('thirteen')" id="adCart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="prod">
+        <img src="products/blackout-curtain-set-beige.webp" alt="" class="socks">
+        <h4>Luxury Towel Set - Graphite Gray</h4>
+        <img src="images/rating-45.png" alt="" class="rate"><span class="rating">7481</span>
+        <h2>$24.00</h2>
+        <select name="" id="quantity" class="ops">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+        </select>
+        <p class="added" id="added"></p>
+        <div class="add">
+        <button onclick="addCart()" id="adCart">Add to Cart</button>
+      </div>
+      </div>
+
+
+<!-- THIS IS THE THIRD LINE -->
+
+      <div class="prod">
+        <img src="products/athletic-cotton-socks-6-pairs.jpg" alt="" class="socks">
+        <h4>Liquid Laundry Detergent, 110 Loads, 82.5 Fl Oz</h4>
+        <img src="images/rating-45.png" alt="" class="rate"><span class="rating">9741</span>
+        <h2>$10.90</h2>
+        <select name="" id="quantity" class="ops">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+        </select>
+  
+        <div class="add">
+          <button onclick="addCart()" id="adCart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="prod">
+        <img src="products/intermediate-composite-basketball.jpg" alt="" class="socks">
+        <h4>Waterproof Knit Athletic Sneakers - Gray</h4>
+        <img src="images/rating-4.png" alt="" class="rate"><span class="rating">4741</span>
+        <h2>$20.95</h2>
+        <select name="" id="quantity" class="ops">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+        </select>
+  
+        <div class="add">
+          <button onclick="addCart()" id="adCart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="prod">
+        <img src="products/adults-plain-cotton-tshirt-2-pack-teal.jpg" alt="" class="socks">
+        <h4>Waterproof Knit Athletic Sneakers - Gray</h4>
+        <img src="images/rating-45.png" alt="" class="rate"><span class="rating">691</span>
+        <h2>$7.99</h2>
+        <select name="" id="quantity" class="ops">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+        </select>
+  
+        <div class="add">
+          <button onclick="addCart()" id="adCart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="prod">
+        <img src="products/black-2-slot-toaster.jpg" alt="" class="socks">
+        <h4>Round Sunglasses</h4>
+        <img src="images/rating-5.png" alt="" class="rate"><span class="rating">79</span>
+        <h2>$18.99</h2>
+        
+  
+        <select name="" id="quantity" class="ops">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+        </select>
+        <div class="add">
+          <button onclick="addCart()" id="adCart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="prod">
+        <img src="products/6-piece-white-dinner-plate-set.jpg" alt="" class="socks">
+        <h4>Women's Two Strap Buckle Sandals - Tan</h4>
+        <img src="images/rating-4.png" alt="" class="rate"><span class="rating">9576</span>
+        <h2>$20.67</h2>
+        <select name="" id="quantity" class="ops">
+          <option id="opsClick" value="1">1</option>
+          <option id="opsClick" value="2">2</option>
+          <option id="opsClick" value="3">3</option>
+          <option id="opsClick" value="4">4</option>
+          <option id="opsClick" value="5">5</option>
+          <option id="opsClick" value="6">6</option>
+          <option id="opsClick" value="7">7</option>
+          <option id="opsClick" value="8">8</option>
+          <option id="opsClick" value="9">9</option>
+          <option id="opsClick" value="10">10</option>
+        </select>
+  
+        <div class="add">
+          <button onclick="addCart()" id="adCart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="prod">
+        <img src="products/6-piece-non-stick-baking-set.webp" alt="" class="socks">
+        <h4>Blackout Curtains Set 4-Pack - Beige</h4>
+        <img src="images/rating-45.png" alt="" class="rate"><span class="rating">6078</span>
+        <h2>$34.99</h2>
+        <select name="" id="quantity" class="ops">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+        </select>
+  
+        <div class="add">
+          <button onclick="addCart()" id="adCart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="prod">
+        <img src="products/plain-hooded-fleece-sweatshirt-yellow.jpg" alt="" class="socks">
+        <h4>Plain Hooded Fleece Sweatshirt</h4>
+        <img src="images/rating-45.png" alt="" class="rate"><span class="rating">2997</span>
+        <h2>$24.00</h2>
+        <select name="" id="quantity" class="ops">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+        </select>
+        <div class="add">
+        <button onclick="addCart()" id="adCart">Add to Cart</button>
+      </div>
+      </div>
+
+<!-- THIS IS THE FOURTH LINE -->
+
+      <div class="prod">
+        <img src="products/athletic-cotton-socks-6-pairs.jpg" alt="" class="socks">
+        <h4>Black and Gray Athletic Cotton Socks - 6 Pairs</h4>
+        <img src="images/rating-45.png" alt="" class="rate"><span class="rating">805</span>
+        <h2>$10.90</h2>
+        <select name="" id="quantity" class="ops">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+        </select>
+  
+        <div class="add">
+          <button onclick="addCart()" id="adCart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="prod">
+        <img src="products/intermediate-composite-basketball.jpg" alt="" class="socks">
+        <h4>Intermediate Size Basketball</h4>
+        <img src="images/rating-4.png" alt="" class="rate"><span class="rating">633</span>
+        <h2>$20.95</h2>
+        <select name="" id="quantity" class="ops">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+        </select>
+  
+        <div class="add">
+          <button onclick="addCart()" id="adCart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="prod">
+        <img src="products/adults-plain-cotton-tshirt-2-pack-teal.jpg" alt="" class="socks">
+        <h4>Adults Plain Cotton T-Shirt - 2 Pack</h4>
+        <img src="images/rating-45.png" alt="" class="rate"><span class="rating">91</span>
+        <h2>$7.99</h2>
+        <select name="" id="quantity" class="ops">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+        </select>
+  
+        <div class="add">
+          <button onclick="addCart()" id="adCart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="prod">
+        <img src="products/black-2-slot-toaster.jpg" alt="" class="socks">
+        <h4>2 Slot Toaster - Black</h4>
+        <img src="images/rating-5.png" alt="" class="rate"><span class="rating">9741</span>
+        <h2>$18.99</h2>
+        
+  
+        <select name="" id="quantity" class="ops">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+        </select>
+        <div class="add">
+          <button onclick="addCart()" id="adCart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="prod">
+        <img src="products/6-piece-white-dinner-plate-set.jpg" alt="" class="socks">
+        <h4>6 Piece White Dinner Plate Set</h4>
+        <img src="images/rating-4.png" alt="" class="rate"><span class="rating">7441</span>
+        <h2>$20.67</h2>
+        <select name="" id="quantity" class="ops">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+        </select>
+  
+        <div class="add">
+          <button onclick="addCart()" id="adCart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="prod">
+        <img src="products/6-piece-non-stick-baking-set.webp" alt="" class="socks">
+        <h4>6-Piece Nonstick, Carbon Steel Oven Bakeware Baking Set</h4>
+        <img src="images/rating-45.png" alt="" class="rate"><span class="rating">871</span>
+        <h2>$34.99</h2>
+        <select name="" id="quantity" class="ops">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+        </select>
+  
+        <div class="add">
+          <button onclick="addCart()" id="adCart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="prod">
+        <img src="products/plain-hooded-fleece-sweatshirt-yellow.jpg" alt="" class="socks">
+        <h4>Plain Hooded Fleece Sweatshirt</h4>
+        <img src="images/rating-45.png" alt="" class="rate"><span class="rating">41</span>
+        <h2>$24.00</h2>
+        <select name="" id="quantity" class="ops">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+        </select>
+        <div class="add">
+        <button onclick="addCart()" id="adCart">Add to Cart</button>
+      </div>
+      </div>
+    </div>
+  </main>
+  
+</body>
+<script src="app.js"></script>
+</html>

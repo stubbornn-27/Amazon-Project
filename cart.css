@@ -1,0 +1,283 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  transition: 0.1s;
+}
+body {
+  background: rgb(255, 254, 254);
+}
+.dark-mode {
+  background-color: rgb(19, 25, 33);
+  color: white;
+  transition: 0.1s;
+}
+
+header {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 10px 10%;
+  background: #f5f5f5;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+header .head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f5f5f5;
+  /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
+  width: 70%;
+  margin: auto;
+}
+header img {
+  width: 100px;
+}
+
+header .head .amazonlogo-mobile{
+display: none;
+}
+header .lock img {
+  width: 20px;
+  /* padding-left: 350px; */
+}
+header .lock {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+main .checkout {
+  display: flex;
+  width: 70%;
+  margin: auto;
+}
+main .checkout .product-info h2 {
+  font-size: 15px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+main .review {
+  width: 57%;
+  margin: auto;
+  margin-top: 90px;
+}
+main .review p {
+  font-size: 23px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+main .product-div {
+  width: 60%;
+  margin: auto;
+  border: 1px solid #dddddd;
+  padding: 10px;
+  /* background: red; */
+}
+main .product-div .date {
+  font-size: 15px;
+  color: green;
+  font-weight: bold;
+  padding-left: 25px;
+}
+main .product-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  padding: 20px;
+}
+main .product-info p {
+  font-size: 13px;
+}
+main .product-grid img {
+  width: 100px;
+}
+main .product-info {
+  /* background: red; */
+  padding: 10px;
+  width: 250px;
+  margin-right: 50px;
+}
+main .quantity {
+  display: flex;
+  gap: 5px;
+  margin-top: 5px;
+}
+main .quantity span {
+  font-size: 15px;
+  color: rgb(91, 165, 255);
+  cursor: pointer;
+}
+main .quantity span:hover {
+  color: orange;
+}
+main .product-info .price {
+  font-size: 16px;
+  font-weight: bold;
+  color: darkred;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+main .product-info .quantity .quant {
+  font-size: 15px;
+  font-weight: bold;
+}
+main .product-grid .option {
+  /* margin-left: -40px; */
+}
+main .option {
+  /* background: red; */
+  width: 300px;
+  padding: 10px;
+  /* margin-left: -50px; */
+}
+main .option .delivery-title {
+  font-size: 15px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+main .option .delivery-option {
+  display: flex;
+  gap: 10px;
+}
+main .option p {
+  font-size: 15px;
+  line-height: 25px;
+}
+main .option .dat {
+  font-size: 15px;
+  font-weight: bold;
+  color: green;
+}
+main .option .free {
+  color: gray;
+}
+.summary {
+  margin-top: 10px;
+  padding: 10px;
+  border: 1px solid #dddddd;
+  width: 25%;
+  margin-left: -100px;
+}
+.summary h2 {
+  font-size: 19px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.summary .items {
+  /* background: red; */
+}
+.summary .item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.summary .right {
+  width: 17%;
+  margin-left: 280px;
+  margin-bottom: 10px;
+  border: 1px solid #dddddd;
+}
+.summary .low {
+  margin-bottom: 10px;
+  border: 1px solid #dddddd;
+}
+.summary .tot {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  color: darkred;
+  font-weight: bold;
+}
+
+.summary .place button {
+  width: 100%;
+  padding: 10px;
+  background: rgb(91, 165, 255);
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.summary .place button:hover {
+  background: orange;
+  transition: 0.3s;
+  border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+  header .amazonlogo-mobile {
+    display: none;
+  }
+  header {
+    width: 100%;
+  }
+  header .head {
+    width: 80%;
+    margin: auto;
+  }
+  main .review {
+  }
+  main .checkout {
+    display: flex;
+    width: 100%;
+    gap: 70px;
+  }
+  main .checkout .product-div {
+    width: 50%;
+  }
+  main .product-grid {
+    display: block;
+  }
+  main .summary hr.right {
+    margin-left: 150px;
+    width: 20%;
+  }
+  main  .summary{
+    width: 300px;
+  }
+}
+
+@media(max-width:425px){
+  .amazonlogo{
+    display: none;
+  }
+  .amazonlogo-mobile{
+    display: block;
+    width: 30px;
+  }
+  header {
+    width: 100%;
+  }
+  header .head {
+    width: 80%;
+    margin: auto;
+  }
+  main .review {
+  }
+  main .checkout {
+    display: block;
+    width: 90%;
+    margin: auto;
+    
+  }
+  main .checkout .product-div {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  main .product-grid {
+    display: block;
+    margin: auto;
+  }
+  main .summary hr.right {
+    margin-left: 150px;
+    width: 20%;
+  }
+  main  .summary{
+    width: 100%;
+    margin: auto;
+  }
+}
